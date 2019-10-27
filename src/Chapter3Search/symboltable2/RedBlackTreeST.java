@@ -2,6 +2,8 @@ package Chapter3Search.symboltable2;
 
 public class RedBlackTreeST<Key extends Comparable<Key>,Value> implements ST {
 
+    private Node root;
+
     private static final boolean RED=true;
     private static final boolean BLACK=false;
 
@@ -73,6 +75,8 @@ public class RedBlackTreeST<Key extends Comparable<Key>,Value> implements ST {
 
     @Override
     public void put(Comparable comparable, Object o) {
+        root=put(root, ((Key) comparable), ((Value) o));
+        root.color=BLACK;
 
     }
 
