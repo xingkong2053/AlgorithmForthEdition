@@ -88,9 +88,10 @@ public class RedBlackTreeST<Key extends Comparable<Key>,Value> implements ST {
         else if(cmp>0) h.right=put(h.right,key,val);
         else h.value=val;
 
-        if(isRed(h.right)&&!isRed(h.left)) h=rotateLeft(h);
-        if(isRed(h.left)&&isRed(h.left.left)) h=rotateRight(h);
-        if(isRed(h.left)&&isRed(h.right)) flipColors(h);
+        /*红黑树核心操作*/
+        if(isRed(h.right)&&!isRed(h.left)) h=rotateLeft(h);                     //如果右子节点是红色的而左子节点是黑色的进行左旋转
+        if(isRed(h.left)&&isRed(h.left.left)) h=rotateRight(h);                 //如果左子节点是红色而它的左子节点也是红色的，进行右旋转
+        if(isRed(h.left)&&isRed(h.right)) flipColors(h);                        //如果左右子节点均为红色的，进行颜色转换
         h.N=size(h.left)+size(h.right)+1;
 
         return h;
