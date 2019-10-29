@@ -3,6 +3,10 @@ package Chapter4Graph;
 import edu.princeton.cs.algs4.Bag;
 import edu.princeton.cs.algs4.In;
 
+/**
+ * 使用邻接表数组表示无向图
+ * G(V,E) V:顶点的数目，E:边的的数目
+ */
 public class Graph {
 
     //顶点的数目
