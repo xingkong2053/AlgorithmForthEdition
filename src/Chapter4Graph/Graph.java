@@ -32,6 +32,15 @@ public class Graph {
             int w=in.readInt();
             addEdge(v,w);               //添加一条连接他们的边
         }
+        System.out.println("**************图结构如下************");
+        for (int v = 0; v < V; v++) {
+            System.out.print("vertex "+v);
+            for (Integer i : adj(v)) {
+                System.out.print("-->"+i);
+            }
+            System.out.println();
+        }
+        System.out.println("**********************************");
 
     }
 
