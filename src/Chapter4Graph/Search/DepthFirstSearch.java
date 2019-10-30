@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class DepthFirstSearch implements Search {
 
-    private boolean[] marked;
+    private boolean[] marked;                       //数组为顶点做标记
     private int count;
 
     //找到与起点s联通的所有顶点
