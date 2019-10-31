@@ -1,6 +1,6 @@
-package Chapter4Graph.Search;
+package Chapter4Graph.Graph.Search;
 
-import Chapter4Graph.Graph;
+import Chapter4Graph.Graph.Graph;
 import basic.DataAbstraction.ImplementByArray.Stack;
 
 /**

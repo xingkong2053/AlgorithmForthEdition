@@ -1,4 +1,4 @@
-package Chapter4Graph.SymbolGraph;
+package Chapter4Graph.Graph.SymbolGraph;
 
 import edu.princeton.cs.algs4.Graph;
 import edu.princeton.cs.algs4.In;

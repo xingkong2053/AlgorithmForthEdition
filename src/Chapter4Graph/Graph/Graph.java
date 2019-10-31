@@ -1,4 +1,4 @@
-package Chapter4Graph;
+package Chapter4Graph.Graph;
 
 import edu.princeton.cs.algs4.Bag;
 import edu.princeton.cs.algs4.In;

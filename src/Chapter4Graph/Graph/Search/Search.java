@@ -1,6 +1,4 @@
-package Chapter4Graph.Search;
-
-import Chapter4Graph.Graph;
+package Chapter4Graph.Graph.Search;
 
 public interface Search {
 

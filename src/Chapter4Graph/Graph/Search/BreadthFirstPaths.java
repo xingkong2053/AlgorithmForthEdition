@@ -1,6 +1,6 @@
-package Chapter4Graph.Search;
+package Chapter4Graph.Graph.Search;
 
-import Chapter4Graph.Graph;
+import Chapter4Graph.Graph.Graph;
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.Stack;
 
