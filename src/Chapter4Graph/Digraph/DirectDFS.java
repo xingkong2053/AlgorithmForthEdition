@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 /**
  * 有向图可达性（使用深度优先搜索）
+ * 给出一个顶点s，找出G中所有能通过s达到的顶点
  */
 public class DirectDFS {
 
@@ -18,6 +19,7 @@ public class DirectDFS {
         dfs(G,s);
     }
 
+    //构造函数对有向图进行预处理
     public DirectDFS(Digraph G,Iterable<Integer> sources){
         marked=new boolean[G.V()];
         for (Integer source : sources) {
