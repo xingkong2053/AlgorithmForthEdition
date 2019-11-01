@@ -12,9 +12,9 @@ public class Topological {
     private Iterable<Integer> order;
 
     public Topological(Digraph G){
-        DirectedCycle cycleFinder = new DirectedCycle(G);
+        DirectedCycle cycleFinder = new DirectedCycle(G);           //第一遍深度优先搜索，判断是否为无环图
         if (!cycleFinder.hasCycle()) {
-            DepthFirstOrder dfs = new DepthFirstOrder(G);
+            DepthFirstOrder dfs = new DepthFirstOrder(G);           //第二遍深度优先搜索
             order=dfs.reversePost();
         }
     }
